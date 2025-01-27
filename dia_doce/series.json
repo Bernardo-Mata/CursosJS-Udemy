@@ -1,0 +1,26 @@
+[
+    {
+      "nombre": "STRANGER THINGS",
+      "autor": "HERMANOS DUFFER",
+      "genero": "CIENCIA FICCIÓN/TERROR",
+      "duracion": "50 minutos"
+    },
+    {
+      "nombre": "BREAKING BAD",
+      "autor": "VINCE GILLIGAN",
+      "genero": "DRAMA/CRIMEN",
+      "duracion": "45 minutos"
+    },
+    {
+      "nombre": "THE CROWN",
+      "autor": "PETER MORGAN",
+      "genero": "DRAMA HISTÓRICO",
+      "duracion": "60 minutos" 
+    },
+    {
+      "nombre": "GAME OF THRONES",
+      "autor": "DAVID BENIOFF Y D. B. WEISS",
+      "genero": "FANTASÍA MEDIEVAL",
+      "duracion": "55 minutos"
+    }
+  ]

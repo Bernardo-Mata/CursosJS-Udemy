@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="">
+    <h1>Calificaciones</h1>
+    <ul id="ul">
+        
+    </ul>
+
+    <button onclick="promedio()">Promedio</button>
+    <button onclick="notaMasAlta()">Nota Mas Alta</button>
+    <button onclick="aplazo()">Aplazo</button>
+
+    <h2 id="resultado"></h2>
+
+
+    <script>
+        let arrayCal = [24,46,37,88,78]
+
+
+        //crear lista de las calificaciones
+        let ul = document.getElementById("ul")
+        for (let calificacion  of arrayCal) {
+            let li = document.createElement("li")
+            li.textContent =calificacion;
+            ul.appendChild(li)
+        }
+
+        function promedio() {
+            let suma = 0;
+            let promedio = 0;
+            for (let x = 0; x < arrayCal.length; x++) {
+                suma = suma + arrayCal[x]
+            
+            }
+            promedio = suma / arrayCal.length
+            
+            
+            let resultado = document.getElementById("resultado")
+            resultado.textContent = "El resultado es " + promedio
+        }
+
+        function notaMasAlta() {
+            let comparador = 0
+            let contador = 0
+            let NotaAlta = 0
+            while (contador< arrayCal.length) {
+                if(comparador<arrayCal[contador]){
+                    NotaAlta = arrayCal[contador]
+                    comparador = NotaAlta
+                }
+                contador++;
+            }
+
+            let resultado = document.getElementById("resultado")
+            resultado.textContent = "El resultado es " + NotaAlta
+        }
+
+
+        function aplazo() {
+            
+            let contador = 0
+            let notaBaja = 0
+            do {
+                
+                let resultado = document.getElementById("resultado")
+                if(arrayCal[contador]< 40){
+                    NotaBaja = arrayCal[contador]
+                    resultado.textContent = "si hay aplazo, La nota Mas baja es " + NotaBaja
+                    break
+                }
+                contador++;
+            } while (contador< arrayCal.length);
+        }
+
+    </script>
+</body>
+</html>

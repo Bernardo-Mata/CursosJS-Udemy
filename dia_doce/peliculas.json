@@ -1,0 +1,26 @@
+[
+    {
+      "nombre": "AMELIE",
+      "autor": "JEAN-PIERRE JEUNET",
+      "genero": "COMEDIA ROMÁNTICA",
+      "duracion": "122 minutos"
+    },
+    {
+      "nombre": "INCEPTION",
+      "autor": "CHRISTOPHER NOLAN",
+      "genero": "CIENCIA FICCIÓN",
+      "duracion": "148 minutos"
+    },
+    {
+      "nombre": "PARASITE",
+      "autor": "BONG JOON-HO",
+      "genero": "THRILLER",
+      "duracion": "132 minutos"
+    },
+    {
+      "nombre": "MAD MAX: FURY ROAD",
+      "autor": "GEORGE MILLER",
+      "genero": "ACCIÓN",
+      "duracion": "120 minutos"
+    }
+  ]
